@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/user-profile.css" />
-    <title>User Profile</title>
+    <link rel="stylesheet" href="css/verify-code.css" />
+    <title>Verify Code</title>
   </head>
   <body>
     <main>
@@ -64,45 +64,23 @@
           <aside class="control-sidebar-overlay">
             <div class="control-sidebar control-sidebar-light center_pos">
               <div class="services">
-                <h2>Selecionar o tipo de conta</h2>
-                <!-- <ng-container  *ngFor="let servico of tipoContas"> -->
-                <a
-                  href="javascript:void(0);"
-                  [attr.data-target]="servico.conta"
-                  data-toggle="modal"
-                  class="item"
-                  (click)="handleClick(servico?.conta)"
-                >
-                  <div class="item-content">
-                    <!-- <h3>{{servico?.conta}}</h3> -->
-                    <h3>Particular</h3>
-                  </div>
-                </a>
-                <a
-                  href="javascript:void(0);"
-                  [attr.data-target]="servico.conta"
-                  data-toggle="modal"
-                  class="item"
-                  (click)="handleClick(servico?.conta)"
-                >
-                  <div class="item-content">
-                    <!-- <h3>{{servico?.conta}}</h3> -->
-                    <h3>Agente</h3>
-                  </div>
-                </a>
-                <a
-                  href="javascript:void(0);"
-                  [attr.data-target]="servico.conta"
-                  data-toggle="modal"
-                  class="item"
-                  (click)="handleClick(servico?.conta)"
-                >
-                  <div class="item-content">
-                    <!-- <h3>{{servico?.conta}}</h3> -->
-                    <h3>Corporativo</h3>
-                  </div>
-                </a>
-                <!-- </ng-container>           -->
+                <h2>Confirmar</h2>
+                <p>Verifique o código de 6 digitos que foi envidado para este número:
+                    <span>+244 932193398</span>
+                </p>
+                
+                <div class="verification-code">
+                    <input class="code-item" type="text" max="1" maxlength="1">
+                    <input class="code-item" type="text" max="1" maxlength="1">
+                    <input class="code-item" type="text" max="1" maxlength="1">
+                    <input class="code-item" type="text" max="1" maxlength="1">
+                    <input class="code-item" type="text" max="1" maxlength="1">
+                    <input class="code-item" type="text" max="1" maxlength="1">
+                </div>
+                <p class="retry-code">Reenviar código em <span>00:30</span></p>
+                <button class="btn-submit">
+                    Confirmar
+                </button>
               </div>
             </div>
           </aside>
