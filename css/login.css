@@ -150,3 +150,9 @@ h3 {
   font-weight: 500;
   color: #e40520 !important;
 }
+
+@media (min-width: 1600px) {
+  .login-container {
+    margin-left: 10%;
+  }
+}
